@@ -12,33 +12,47 @@ body {
 
 #wrapper
 {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;	
 }
 
 
 #jibe {
-	display: inline-block;
-	width: 49%;
-	float: left;
+  float: left;
+  min-width: 200px;
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
 }
 
 #jive {
-	display: inline-block;
-	width: 49%;
-	float: left;
+  float: left;
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
 }
 
 article
 {
 	display: block;
     padding: 10px;
+    width: 100%;
+	*zoom: 1;
+	min-height: 30px;
+}
+
+article:before,
+article:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+article:after {
+  clear: both;
 }
 
 footer
 {
 	border-top: 2px dashed #abbac3;
-	clear:both;
 	display: block;
 	margin-top: 1em;
     padding-top: 1em;
@@ -48,7 +62,7 @@ footer
 
 footer p
 {
-font-size: smaller;
+	font-size: smaller;
 	padding-top: 0.8em;
 }
 
@@ -59,15 +73,12 @@ h2
     margin-bottom: 5px;
 }
 
-blockquote
-{
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -khtml-border-radius: 20px;
-    border-radius: 20px;
-    background-color: #F8F8F8;
-    padding: 1em;
-    border: 1px dashed #CCC;
+@media screen and (max-width: 800px) {
+	#jibe 
+	{
+		clear: left;
+	}
+	
 }
 
 @media print
