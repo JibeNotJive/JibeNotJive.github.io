@@ -1,9 +1,3 @@
-*
-{
-    padding: 0;
-    margin: 0;
-}
-
 html, body
 {
     background: #FeFefF;
@@ -22,6 +16,19 @@ body {
     margin: 0 auto;	
 }
 
+
+#jibe {
+	display: inline-block;
+	width: 49%;
+	float: left;
+}
+
+#jive {
+	display: inline-block;
+	width: 49%;
+	float: left;
+}
+
 article
 {
 	display: block;
@@ -33,9 +40,16 @@ footer
 	border-top: 2px dashed #abbac3;
 	clear:both;
 	display: block;
-    padding: 1em;
+	margin-top: 1em;
+    padding-top: 1em;
     font-size: 0.8em;
     color: #555;
+}
+
+footer p
+{
+font-size: smaller;
+	padding-top: 0.8em;
 }
 
 h2
