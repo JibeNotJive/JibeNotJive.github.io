@@ -1,46 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-
-    </body>
-</html>
+<!doctype html>
+	<meta charset="utf-8">
+	<title>You might have meant jibe instead of jive</title>
+	<meta name="author" content="Ben Hyrman">
+	<meta name="viewport" content="width=device-width">
+	<meta property="twitter:creator" content="@hyrmn" />
+	<meta property="og:title" content="Make jibe not jive" />
+	<meta property="og:type" content="blog" />
+	<meta property="robots" content="index,follow" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="/css/site.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+	<div id="wrapper">
+		{{ content }}
+		<footer>
+			This site and its content is released unencumbered into the public domain.<br />
+			The full license can be found at <a href="//raw.github.com/JibeNotJive/JibeNotJive.github.io/master/LICENSE">github.com/JibeNotJive/JibeNotJive.github.io/master/LICENSE</a>
+		</footer>
+	</div>
